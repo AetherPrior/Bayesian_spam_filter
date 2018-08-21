@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1534767168 source:e:\mingw\mingw64\projects\spam_filter\src\worddata.cpp
+	"WordData.h"
+
+1534766946 e:\mingw\mingw64\projects\spam_filter\include\worddata.h
+
+1534605665 source:e:\mingw\mingw64\projects\spam_filter\src\stack.cpp
+	"stack.h"
+	<iostream>
+
+1534767286 e:\mingw\mingw64\projects\spam_filter\include\stack.h
+
+1534770502 source:e:\mingw\mingw64\projects\spam_filter\src\wordget.cpp
+	"WordGet.h"
+
+1534606725 e:\mingw\mingw64\projects\spam_filter\include\wordget.h
+
+1534772118 source:e:\mingw\mingw64\projects\spam_filter\src\main.cpp
+	"WordData.h"
+	"stackimpl.h"
+	"WordGet.h"
+	<string.H>
+	<fstream>
+	<cstdio>
+
+1534607384 e:\mingw\mingw64\projects\spam_filter\include\stackimpl.h
+	<iostream>
+	"stack.h"
+
