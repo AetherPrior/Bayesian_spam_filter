@@ -4,7 +4,7 @@
 #include <string.H>
 #include <fstream>
 #include <cstdio>
-
+#include <string>
 #define TotSpamProb SpamProb
 #define TotWordCount nrword
 using std::fstream;
@@ -25,7 +25,7 @@ double BayesianChecker(WordData w1, double TotSpamProb)
  double prob= nrprob/drprob;
  return prob;
 }
-
+/*
 stack<WordGet> GetWord(char* Sentence)
 {
  stack<WordGet> s1;
@@ -46,8 +46,14 @@ stack<WordGet> GetWord(char* Sentence)
     }
  return s1;
 }
-
-
+*/
+//using istringstream to obtain the results in a vector instead of manually doing it
+std::vector<std::string> GetWord(std::string Sentence)
+{
+ std::istringstream isSentence(Sentence);
+ std::vector<std::string> vs1(/*begin case*/std::istream_iterator<std::string>{isSentence},
+                              /*end case*/  std::istream_iterator<std::string>());
+}
 int main(void)
 {
    //create a file stream to store the data in a file
@@ -88,6 +94,9 @@ int main(void)
 
 
    //*******************************input**********************************8
+  //to change 
+   //make the sentence an std::string from  a C-Style character array
+   //
    char Sentence[140];
    cout<<"Enter a sentence: ";
    gets(Sentence);
