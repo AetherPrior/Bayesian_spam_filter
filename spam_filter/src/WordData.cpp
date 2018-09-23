@@ -4,6 +4,7 @@ WordData::WordData()
 {
     //ctor
     SpamProb = WordProb = 0;
+    word = "  ";
 }
 
 WordData::~WordData()
