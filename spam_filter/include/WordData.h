@@ -6,10 +6,10 @@ class WordData
 {
     public:
         WordData();
-        virtual ~WordData();
+       // virtual ~WordData();
         int nrspam,nrword;
         double SpamProb,WordProb;
-        char word[45];
+        std::string word; 
         void ClearData();
         void ProbCalc();
     protected:
